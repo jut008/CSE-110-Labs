@@ -11,7 +11,7 @@ export function ToggleTheme() {
   return (
     <ThemeContext.Provider value={currentTheme}>
       <button onClick={toggleTheme}> Toggle Theme </button>
-      <ClickCounter />
+      {/* <ClickCounter /> */}
     </ThemeContext.Provider>
   );
  }
@@ -33,7 +33,6 @@ export function ClickCounter() {
        style={{
          background: theme.background,
          color: theme.foreground,
-         padding: "20px",
        }}
      >
        <p>You clicked {count} times </p>
