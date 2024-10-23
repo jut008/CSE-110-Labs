@@ -16,7 +16,7 @@ const ExpenseItem = (currentExpense: Expense) => {
       <div>{currentExpense.name}</div>
       <div>${currentExpense.cost}</div>
       <div>
-        <button onClick={() => handleDeleteExpense(currentExpense)}>x</button>
+        <button onClick={() => handleDeleteExpense(currentExpense)} data-testid={currentExpense.id}>x</button>
       </div>
     </li>
   );
